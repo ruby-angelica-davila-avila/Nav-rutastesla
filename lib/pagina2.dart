@@ -7,7 +7,7 @@ class Pantalla2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Second Screen'),
+          title: const Text('carros'),
         ),
         body: Card(
           child: ListTile(

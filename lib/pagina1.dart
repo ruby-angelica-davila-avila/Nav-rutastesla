@@ -25,10 +25,10 @@ class Pantalla1 extends StatelessWidget {
         ),
         body: Center(
           child: RaisedButton(
-            child: Text('Launch screen'),
+            child: Text('TESLA'),
             onPressed: () {
               // Navega a la segunda pantalla usando una ruta con nombre
-              Navigator.pushNamed(context, '/second');
+              Navigator.pushNamed(context, '/Pantalla2');
             },
           ),
         )); //scaffold
