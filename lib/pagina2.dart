@@ -17,7 +17,9 @@ class Pantalla2 extends StatelessWidget {
           shadowColor: Colors.green,
           margin: const EdgeInsets.all(20),
           shape: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: Colors.green, width: 1)),
-        ) //body center
+        )
+
+        //body center
         ); //scaffold
   } //widget
 } //segunda pantalla

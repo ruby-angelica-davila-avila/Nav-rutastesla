@@ -7,7 +7,7 @@ class Pantalla1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('First Screen'),
+          title: const Text('tesla rutas'),
           centerTitle: true,
           actions: [
             IconButton(
@@ -25,7 +25,7 @@ class Pantalla1 extends StatelessWidget {
         ),
         body: Center(
           child: ElevatedButton(
-            child: Text('TESLA'),
+            child: Text('carros'),
             style: ElevatedButton.styleFrom(
                 onPrimary: Colors.white,
                 primary: Colors.purple,
