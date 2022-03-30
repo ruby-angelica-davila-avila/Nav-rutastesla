@@ -7,7 +7,7 @@ class Pantalla1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('First Screen'),
+          title: const Text('tesla rutas'),
           centerTitle: true,
           actions: [
             IconButton(
@@ -23,14 +23,28 @@ class Pantalla1 extends StatelessWidget {
           ],
           backgroundColor: Colors.black,
         ),
-        body: Card(
-          child: ListTile(
-            title: Text("Codesinsider.com"),
+        body: Center(
+          child: ElevatedButton(
+            child: Text('carros'),
+            style: ElevatedButton.styleFrom(
+                onPrimary: Colors.white,
+                primary: Colors.purple,
+                onSurface: Colors.grey,
+                side: BorderSide(color: Colors.black, width: 1),
+                elevation: 20,
+                minimumSize: Size(150, 50),
+                shadowColor: Colors.teal,
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+                textStyle: TextStyle(
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                  fontFamily: "alex",
+                )),
+            onPressed: () {
+              // Navega a la segunda pantalla usando una ruta con nombre
+              Navigator.pushNamed(context, '/segunda');
+            },
           ),
-          elevation: 8,
-          shadowColor: Colors.green,
-          margin: const EdgeInsets.all(20),
-          shape: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: Colors.green, width: 1)),
         )); //scaffold
   } //widgets
 } //pantalla 1

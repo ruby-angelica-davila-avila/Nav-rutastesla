@@ -6,29 +6,20 @@ class Pantalla2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Second Screen'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          // Within the SecondScreen widget
-          onPressed: () {
-            // Navigate back to the first screen by popping the current route
-            // off the stack.
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
+        appBar: AppBar(
+          title: const Text('carros'),
         ),
-      ), //body center
-    ); //scaffold
-  } //widget
-} //segunda pantalla
-body: Card(
+        body: Card(
           child: ListTile(
-            title: Text("Codesinsider.com"),
+            title: Text("carro model s"),
           ),
           elevation: 8,
           shadowColor: Colors.green,
           margin: const EdgeInsets.all(20),
           shape: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: Colors.green, width: 1)),
-        ));
+        )
+
+        //body center
+        ); //scaffold
+  } //widget
+} //segunda pantalla
