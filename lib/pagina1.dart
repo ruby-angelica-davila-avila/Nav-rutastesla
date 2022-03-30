@@ -24,8 +24,22 @@ class Pantalla1 extends StatelessWidget {
           backgroundColor: Colors.black,
         ),
         body: Center(
-          child: RaisedButton(
+          child: ElevatedButton(
             child: Text('TESLA'),
+            style: ElevatedButton.styleFrom(
+                onPrimary: Colors.white,
+                primary: Colors.purple,
+                onSurface: Colors.grey,
+                side: BorderSide(color: Colors.black, width: 1),
+                elevation: 20,
+                minimumSize: Size(150, 50),
+                shadowColor: Colors.teal,
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+                textStyle: TextStyle(
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                  fontFamily: "alex",
+                )),
             onPressed: () {
               // Navega a la segunda pantalla usando una ruta con nombre
               Navigator.pushNamed(context, '/segunda');
