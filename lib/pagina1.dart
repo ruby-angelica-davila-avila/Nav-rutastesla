@@ -23,14 +23,14 @@ class Pantalla1 extends StatelessWidget {
           ],
           backgroundColor: Colors.black,
         ),
-        body: Card(
-          child: ListTile(
-            title: Text("Codesinsider.com"),
+        body: Center(
+          child: RaisedButton(
+            child: Text('Launch screen'),
+            onPressed: () {
+              // Navega a la segunda pantalla usando una ruta con nombre
+              Navigator.pushNamed(context, '/second');
+            },
           ),
-          elevation: 8,
-          shadowColor: Colors.green,
-          margin: const EdgeInsets.all(20),
-          shape: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: Colors.green, width: 1)),
         )); //scaffold
   } //widgets
 } //pantalla 1
